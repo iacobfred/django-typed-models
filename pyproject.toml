@@ -8,7 +8,7 @@ skip-string-normalization = true
 include = '\.pyi?$'
 
 [tool.poetry]
-name = "django-typed-modes"
+name = "django-typed-models"
 description = "Sane single table model inheritance for Django"
 version = "0.14.0"
 license = "BSD"
