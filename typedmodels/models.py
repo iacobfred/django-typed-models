@@ -41,7 +41,7 @@ class TypedModelMetaclass(ModelBase):
     This metaclass enables a model for auto-downcasting using a ``type`` attribute.
     """
 
-    def __new__(meta, classname, bases, classdict):
+    def __new__(meta, classname, bases, classdict) -> "Type[TypedModelT]":
         try:
             TypedModel
         except NameError:
